@@ -1,0 +1,7 @@
+{
+  "name": "room-temp-to-flow-setpoint",
+  "goal": "Drive the flow temperature setpoint directly from the room temperature (should be refused)",
+  "source": {"quantityKind": "Temperature", "roles": ["room"]},
+  "sink": {"quantityKind": "Temperature", "roles": ["flow", "setpoint"]},
+  "periodSeconds": 60
+}

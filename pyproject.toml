@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ail-mvp"
+version = "0.1.0"
+description = "Adaptive Interoperability Layer - draft, verify and plan device connections"
+requires-python = ">=3.10"
+dependencies = ["pymodbus>=3.10"]
+
+[project.optional-dependencies]
+llm = ["anthropic"]
+dev = ["pytest"]
+
+[project.scripts]
+ail = "ail.cli:main"
+
+[tool.setuptools]
+packages = ["ail"]

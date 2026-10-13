@@ -1,0 +1,7 @@
+{
+  "name": "log-humidity",
+  "goal": "Record room humidity for monitoring (read-only)",
+  "source": {"quantityKind": "RelativeHumidity", "roles": ["room"]},
+  "sink": {"builtin": "log"},
+  "periodSeconds": 10
+}

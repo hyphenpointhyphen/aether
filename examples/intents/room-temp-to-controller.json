@@ -1,0 +1,7 @@
+{
+  "name": "room-temp-to-controller",
+  "goal": "Feed the measured room temperature into the heating controller's external room-temperature input",
+  "source": {"quantityKind": "Temperature", "roles": ["room"]},
+  "sink": {"quantityKind": "Temperature", "roles": ["room", "input"]},
+  "periodSeconds": 60
+}
